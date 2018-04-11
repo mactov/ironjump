@@ -3,7 +3,7 @@ var width = 1000; // Default value is 1000
 var height = 1700; // Default value is 1700
 var ball = {};
 var camera = {};
-gravity = 2; // Default value is 5
+gravity = 4; // Default value is 5
 intervalTimeout = 25; // Default value is 25
 var intervalId;
 var debug = true; // Change it to false to remove the grid
@@ -40,10 +40,10 @@ $(document).ready(function() {
 $(document).keydown(function(e) {
   switch(e.which) {
     case 37: // left
-      ball.vx -= 20
+      ball.vx -= 30
       break;
     case 39: // right
-      ball.vx += 20
+      ball.vx += 30
       break;
     case 32: // space
       changeBgColor();
