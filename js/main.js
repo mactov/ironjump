@@ -3,7 +3,7 @@ var width = 1000; // Default value is 1000
 var height = 1700; // Default value is 1700
 var ball = {};
 var camera = {};
-gravity = 5; // Default value is 5
+gravity = 2; // Default value is 5
 intervalTimeout = 25; // Default value is 25
 var intervalId;
 var debug = true; // Change it to false to remove the grid
@@ -30,7 +30,7 @@ $(document).ready(function() {
   
   if(window.DeviceMotionEvent) {
     window.addEventListener("devicemotion", function (event) {
-      ball.x -= event.accelerationIncludingGravity.x*5;
+      ball.x -= event.accelerationIncludingGravity.x*gravity; //gravity = 5 hard coded
     }, false);
   } else {
     console.log("The browser is not supporting devicemotion")
