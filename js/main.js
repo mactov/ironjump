@@ -6,7 +6,7 @@ var camera = {};
 gravity = 4; // Default value is 5
 intervalTimeout = 25; // Default value is 25
 var intervalId;
-var debug = true; // Change it to false to remove the grid
+var debug = false; // Change it to false to remove the grid
 
 
 // When all the HTML is loaded
