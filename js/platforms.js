@@ -101,7 +101,7 @@ for (var y = 0; y > -100000; y -= 500) {
     color = "rgb(100, 110, 255)";
   }
   platforms.push({
-    x: Math.random()*(width-200),
+    x: Math.random()*(800),
     y,
     width: 200,
     color
