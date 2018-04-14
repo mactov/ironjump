@@ -4,7 +4,7 @@ var platforms = [
     y: 1000,
     width: 1000
   },
-  {
+  /*{
     x: 400,
     y: 500,
     width: 200
@@ -81,7 +81,7 @@ var platforms = [
     y: -5000,
     width: 200
   },
-
+*/
 ]
 
 
